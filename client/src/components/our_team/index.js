@@ -5,13 +5,13 @@ import MessageIcon from '@mui/icons-material/Message';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import './style.css'; // Import your CSS file
 
-const Profile = () => {
+const Profile = ({image}) => {
     return (
         <div className="profile-wrapper">
             <div className="profile">
                 <div className="profile-image">
                     <img
-                        src="assets/melissa.jpg"
+                      src={`/img/${image}`}
                         alt="Profile"
                     />
                 </div>

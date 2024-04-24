@@ -96,14 +96,11 @@ const TeamQC = () => {
     });
   };
   return (
-        <div id="bank-accounts" className="bank-accounts"  ref={bankAccountsRef}>
-        <div className='action-button_left' onClick={handleScrollLeft}><ArrowBackIosIcon /></div>
-            <Profile />
-            <Profile />
-            <Profile />
-            <Profile />
-        <div className='action-button_right' onClick={handleScrollRight}><ArrowForwardIosIcon /></div>
-      </div>
+    <div id="team_slidder" className="team_slidder"  ref={bankAccountsRef}>
+      <Profile image={'github_profile.jpg'}/>
+      <Profile image={'rufus_head_shot.jpeg'}/>      
+      <Profile image={'kene_headshot.jpeg'}/>
+    </div>
   );
 };
 export default TeamQC;

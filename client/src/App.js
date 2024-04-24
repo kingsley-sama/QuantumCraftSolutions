@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import Menue_Bar from './nav/menue'
 import { BrowserRouter as Router, Routes, Route,Outlet } from "react-router-dom"
 import DownBar from './root/bottom_bar';
 import Header from './nav/menue';
@@ -37,22 +36,23 @@ const Body = () =>
           <button>Email Us</button>
         </div>
       </div>
-      <section>
+      <section id='about-us'>
         <h2>Who Are We</h2>
         <p> abo. Aliquam in lorem sit amet are ac, nonummy non, lobortis a enim. Cras elementum. Phasellus faucibus molestie nisl.</p>
         <p>Nulla inceptos hymenaeos. Aenean vel massa quis mauris vehicula lacinia. Aliquam id dolor.</p>
         <p>Integer tempor. eserunt mollit anim id est laborum. Vivamus porttitor turpis ac leo. istique tellus amet .</p>
+        <h2>Meet Our Team</h2>
         <TeamQC />
       </section>
       <div className="parallax-image parallax-image-02"></div>
       <section>
-        <h2>Parallax Example</h2>
+        <h2>Our Projects</h2>
         <Cards />
         {/* Repeat the content for each section */}
       </section>
       <div className="parallax-image parallax-image-03">
       <div className='our_services'>
-      <h2>Parallax Example</h2>
+      <h2>Our Portfolio</h2>
 		  <div>
 			<AboutUs />
 			<AboutUs />
@@ -67,13 +67,13 @@ const Body = () =>
 		</div>
       </div>
       <section>
-        <h2>Parallax Example</h2>
+        <h2>Our Projects</h2>
         {/* Repeat the content for each section */}
       </section>
     </div>
   );
  }
-const AboutUs = ()=>{
+const AboutUs = ({project_name, image, id, link})=>{
   return(
 	<div className='about_us'>
 	  <h3>Effective</h3>

@@ -30,9 +30,16 @@
   background-image: url("/public/assets/hero_three.jpg");
 }
 section {
-  padding: 64px;
+  padding: 44px;
 }
-
+#about-us{
+  padding: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0,0,0,0.2);
+}
 section > h2 {
   text-transform: uppercase;
   margin-bottom: 24px;
